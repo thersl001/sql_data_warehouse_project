@@ -1,7 +1,5 @@
 /*
-===============================================================================
-Stored Procedure: Load Bronze Layer (Source -> Bronze)
-===============================================================================
+-----------------------------------------------------------------------------------------
 Script Purpose:
     This stored procedure loads data into the 'bronze' schema from external CSV files. 
     It performs the following actions:
@@ -14,11 +12,8 @@ Parameters:
 
 Usage Example:
     EXEC bronze.load_bronze;
-===============================================================================
+-----------------------------------------------------------------------------------------
 */
-
-EXEC bronze.load_bronze
-;
 
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
@@ -143,3 +138,4 @@ BEGIN
 		PRINT '=========================================='
 	END CATCH
 END
+;
